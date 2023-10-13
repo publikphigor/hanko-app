@@ -1,9 +1,7 @@
+import AppRouter from "@routes/AppRouter";
+
 function App() {
-  return (
-    <div className="h-full w-full bg-slate-500 font-satoshi text-3xl">
-      hello world
-    </div>
-  );
+  return <AppRouter />;
 }
 
 export default App;

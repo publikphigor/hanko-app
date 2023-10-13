@@ -4,9 +4,12 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "airbnb-typescript/base",
-    "standard-with-typescript",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
   ],
   overrides: [
     {
@@ -19,10 +22,22 @@ module.exports = {
       },
     },
   ],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    project: "./tsconfig.json",
   },
-  plugins: ["react"],
-  rules: {},
+  plugins: ["@typescript-eslint", "react", "prettier"],
+  rules: {
+    "react/react-in-jsx-scope": 0,
+    "import/no-extraneous-dependencies": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: "arrow-function",
+      },
+    ],
+  },
 };
