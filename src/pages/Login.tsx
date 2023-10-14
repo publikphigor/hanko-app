@@ -77,7 +77,7 @@ const Login = () => {
               className="parent-full block object-contain"
             />
           </div>
-          <hanko-auth />
+          <hanko-auth class={`hanko ${isDarkTheme ? 'dark' : ''}`} />
         </div>
       </div>
     </div>
