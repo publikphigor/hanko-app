@@ -72,7 +72,6 @@ hanko-profile {
   flex-shrink: 0;
   flex-basis: 100%;
 }
-
 .hanko.dark::part(form-item) input {
   background-color: #111 !important;
 }
@@ -80,10 +79,17 @@ hanko-profile {
 .hanko::part(headline1) {
   text-align: center;
 }
-
 .hanko.dark::part(headline1) {
   color: #fff;
 }
+
+.hanko::part(paragraph) {
+  font-size: 14px;
+}
+.hanko.dark::part(paragraph) {
+  color: #f2f4f7;
+}
+
 .hanko.dark::part(button) {
   border: none;
 }
