@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
 const baseUrl =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:5173/'
-    : 'https://taskease-hanko.netlify.app/';
+    : 'https://taskease-nu.vercel.app/';
 
 // https://vitejs.dev/config/
 export default defineConfig({
