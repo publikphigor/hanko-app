@@ -1,7 +1,7 @@
-import LoadingPage from "@components/global/LoadingPage";
-import NotFound from "@components/global/NotFound";
-import { LazyExoticComponent, Suspense, lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+import LoadingPage from '@components/global/LoadingPage';
+import NotFound from '@components/global/NotFound';
+import { LazyExoticComponent, Suspense, lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 interface IRoutes {
   path: string;
@@ -10,8 +10,12 @@ interface IRoutes {
 
 const routes: IRoutes[] = [
   {
-    path: "/",
-    component: lazy(() => import("@pages/Home")),
+    path: '/',
+    component: lazy(() => import('@pages/Home')),
+  },
+  {
+    path: '/login',
+    component: lazy(() => import('@pages/Login')),
   },
 ];
 

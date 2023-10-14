@@ -1,7 +1,11 @@
-import AppRouter from "@routes/AppRouter";
+import AppRouter from '@routes/AppRouter';
 
-function App() {
-  return <AppRouter />;
-}
+const App = () => {
+  return (
+    <div className="font-satoshi">
+      <AppRouter />
+    </div>
+  );
+};
 
 export default App;

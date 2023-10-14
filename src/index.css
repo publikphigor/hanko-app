@@ -1,9 +1,19 @@
-@import url("../src/assets/fonts/Satoshi/stylesheet.css");
+@import url('../src/assets/fonts/Satoshi/stylesheet.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Satoshi", sans-serif;
+  font-family: 'Satoshi', sans-serif;
+}
+
+@layer utilities {
+  .center-child {
+    @apply items-center justify-center;
+  }
+
+  .parent-full {
+    @apply w-full h-full;
+  }
 }
