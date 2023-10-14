@@ -9,6 +9,9 @@ export default {
       },
       colors: {
         'light-bg': '#fafafa',
+        'dark-bg': '#111111',
+        'light-text': '#f2f4f7',
+        'dark-text': '#1d2939',
       },
     },
   },
