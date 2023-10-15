@@ -61,7 +61,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex h-full sm:w-1/2 center-child bg-white dark:bg-dark-bg">
+      <div className="w-full flex h-full sm:w-1/2 pt-[32px] sm:pt-0 sm:center-child bg-white dark:bg-dark-bg">
         <div>
           <button
             type="button"
