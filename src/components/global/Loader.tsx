@@ -10,9 +10,7 @@ const Loader = ({ text, className, noText }: LoaderProps) => {
   return (
     <div className={`flex flex-col items-center justify-center gap-3 h-full ${className}`}>
       <Icon icon="eos-icons:loading" className="text-2xl" />
-      {!noText && (
-        <p className="text-sm text-sub-200-light dark:text-sub-200-dark">{text || 'Loading...'}</p>
-      )}
+      {!noText && <p className="text-sm dark:text-light-text">{text || 'Loading...'}</p>}
     </div>
   );
 };
